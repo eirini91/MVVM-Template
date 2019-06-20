@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.pkfcooperparry.template.ui.login.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="false">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="59dp"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/colourlogo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:afterTextChanged="@{viewModel::afterTextChanged}"
+                        android:background="@drawable/bg_white_round_small"
+                        android:drawableStart="@drawable/emaillo"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="8dp"
+                        android:text="@={viewModel.email}"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/editPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="20dp"
+                        android:afterTextChanged="@{viewModel::afterTextChanged}"
+                        android:background="@drawable/bg_white_round_small"
+                        android:drawableStart="@drawable/passwordlo"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:text="@={viewModel.password}"
+                        android:textColor="@android:color/black" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/remember_site" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:button="@drawable/bg_login_checkbox_selector"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/emailSignInButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector_round"
+                    android:enabled="@{viewModel.isValid ? true :false}"
+                    android:onClick="@{() -> viewModel.onServerLoginClick()}"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="@{viewModel.getIsLoading() ? View.VISIBLE : View.GONE}" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">All Together</string>
+    <string name="password">Password</string>
+    <string name="no_items_found">No items found</string>
+    <string name="visit_details">Visit Details |</string>
+    <string name="nicholas_associates">Nicholas Associates</string>
+    <string name="placeholder">-</string>
+    <string name="action_continue">Continue</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="okay">Okay</string>
+    <string name="login">Login</string>
+    <string name="content_description">image</string>
+    <string name="email">Email</string>
+    <string name="remember_site">Remember site</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
