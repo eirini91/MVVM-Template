@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.pkfcooperparry.template.ui.form.page.PageViewModel" />
+            type="com.televantou.template.ui.form.page.PageViewModel" />
     </data>
 
     <LinearLayout

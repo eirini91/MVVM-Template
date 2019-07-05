@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.pkfcooperparry.template.ui.login.LoginViewModel" />
+            type="com.televantou.template.ui.login.LoginViewModel" />
     </data>
 
     <RelativeLayout
@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="59dp"
                     android:contentDescription="@string/content_description"
-                    android:src="@drawable/colourlogo" />
+                    android:src="@drawable/coloured_logo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                         android:layout_height="42dp"
                         android:afterTextChanged="@{viewModel::afterTextChanged}"
                         android:background="@drawable/bg_white_round_small"
-                        android:drawableStart="@drawable/emaillo"
+                        android:drawableStart="@drawable/email_lo"
                         android:drawablePadding="8dp"
                         android:hint="@string/email"
                         android:inputType="textEmailAddress"
@@ -66,7 +66,7 @@
                         android:layout_marginTop="20dp"
                         android:afterTextChanged="@{viewModel::afterTextChanged}"
                         android:background="@drawable/bg_white_round_small"
-                        android:drawableStart="@drawable/passwordlo"
+                        android:drawableStart="@drawable/password_lo"
                         android:drawablePadding="8dp"
                         android:hint="@string/password"
                         android:inputType="textPassword"

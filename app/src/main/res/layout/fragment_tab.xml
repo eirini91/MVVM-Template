@@ -2,13 +2,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
         <import type="android.view.View" />
-
         <variable
             name="viewModel"
-            type="com.pkfcooperparry.template.ui.form.page.tab.TabFragmentViewModel" />
-
+            type="com.televantou.template.ui.form.page.tab.TabFragmentViewModel" />
     </data>
 
     <LinearLayout
@@ -18,8 +15,6 @@
         android:orientation="vertical"
         android:paddingLeft="30dp"
         android:paddingRight="30dp">
-
-
     </LinearLayout>
 
 </layout>

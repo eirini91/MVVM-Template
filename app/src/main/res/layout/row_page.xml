@@ -10,27 +10,21 @@
     android:paddingEnd="8dp"
     android:paddingBottom="20dp">
 
-    <RelativeLayout
-        android:id="@+id/item"
+
+    <ImageView
+        android:id="@+id/pageIcon"
         android:layout_width="wrap_content"
-        android:layout_height="140dp"
-        android:background="@drawable/bg_page_selector">
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description" />
 
-        <ImageView
-            android:id="@+id/pageIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/content_description" />
+    <TextView
+        android:id="@+id/pageName"
+        style="@style/PageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp" />
 
-        <TextView
-            android:id="@+id/pageName"
-            style="@style/PageText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="20dp" />
-
-    </RelativeLayout>
 </RelativeLayout>

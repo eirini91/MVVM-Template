@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.pkfcooperparry.template.ui.form.FormViewModel" />
+            type="com.televantou.template.ui.form.FormViewModel" />
     </data>
 
     <RelativeLayout
@@ -35,8 +35,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description_image"
                 android:onClick="@{() -> viewModel.onBackClick()}"
-
                 android:src="@drawable/bg_back_selector"
                 android:textSize="20sp" />
 
@@ -44,7 +44,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/toollayout"
+            android:id="@+id/toolLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/topButtonLayout"
@@ -93,7 +93,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/toollayout"
+            android:layout_below="@+id/toolLayout"
             android:gravity="center"
             android:text="@string/no_items_found"
             android:visibility="@{viewModel.itemsExist ? View.GONE : View.VISIBLE}" />
@@ -102,7 +102,7 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/toollayout"
+            android:layout_below="@+id/toolLayout"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:clipChildren="false"

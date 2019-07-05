@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/backhi" android:state_pressed="true" /> <!-- checked -->
-    <item android:drawable="@drawable/backlo" android:state_pressed="false" /> <!-- unchecked-->
+    <item android:drawable="@drawable/back_hi" android:state_pressed="true" /> <!-- checked -->
+    <item android:drawable="@drawable/back_lo" android:state_pressed="false" /> <!-- unchecked-->
 </selector>

@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/placeholder"
-        android:textSize="11sp"
+        android:textSize="12sp"
         android:textStyle="bold" />
 
     <View
@@ -30,7 +30,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -44,7 +44,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -58,7 +58,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -72,7 +72,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -86,7 +86,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -100,7 +100,7 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
         android:layout_width="1dp"
@@ -114,6 +114,6 @@
         android:gravity="center"
         android:text="@string/placeholder"
 
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
 </LinearLayout>
